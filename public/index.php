@@ -1,3 +1,7 @@
 <?php
+use Src\Example\Example;
 
-phpinfo();
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$test = new Example;
+var_dump($test->say());
